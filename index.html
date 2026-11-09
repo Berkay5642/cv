@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred | Jubbio Topluluk Yönetimi CV</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        
+        /* Kapalı Bordo ve Mavimsi İsim Tasarımı */
+        .alfred-title {
+            background: linear-gradient(135deg, #9f1239, #312e81, #1e3a8a); /* Bordo (Rose-800) -> Çivit (Indigo-900) -> Koyu Mavi (Blue-900) */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 4px 25px rgba(159, 18, 57, 0.5)); /* İsmin etrafına hafif bordo parlama */
+        }
+
+        .gradient-text { background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .cta-button { transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .cta-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: all 0.5s ease; }
+        .cta-button:hover::before { left: 100%; }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.5); }
+        .reveal { opacity: 0; transform: translateY(60px); transition: all 1.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-400 { transition-delay: 400ms; }
+    </style>
+</head>
+<body class="antialiased min-h-screen relative overflow-x-hidden selection:bg-sky-500 selection:text-white">
+
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-sky-600/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-rose-900/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+        
+        <header class="text-center mb-16 reveal active mt-8">
+            <!-- Profil Fotoğrafı Kaldırıldı -->
+            
+            <!-- İsmi Büyütüp İstenilen Renk Verildi -->
+            <h1 class="alfred-title text-7xl md:text-8xl font-black tracking-tight mb-2 uppercase">
+                Alfred
+            </h1>
+            
+            <h2 class="text-xl md:text-2xl font-medium text-slate-300 gradient-text mt-6">
+                Jubbio Topluluk Yönetimi & Operasyonel Yönetici Adayı
+            </h2>
+            <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm font-medium">
+                <span class="px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-sky-300 flex items-center gap-2 shadow-inner">
+                    <i class="ph ph-shield-check text-lg"></i> Moderasyon
+                </span>
+                <span class="px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-indigo-300 flex items-center gap-2 shadow-inner">
+                    <i class="ph ph-users-three text-lg"></i> Topluluk Yönetimi
+                </span>
+                <span class="px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-emerald-300 flex items-center gap-2 shadow-inner">
+                    <i class="ph ph-lightning text-lg"></i> Operasyon
+                </span>
+            </div>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            
+            <section class="glass-card rounded-2xl p-6 transition hover:border-sky-500/30 reveal delay-200">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-sky-500/20 rounded-lg text-sky-400"><i class="ph ph-identification-card text-2xl"></i></div>
+                    <h3 class="text-xl font-bold">01 | Kişisel Profil</h3>
+                </div>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3 border-b border-slate-700/50 pb-3"><i class="ph ph-discord-logo text-xl text-slate-400 mt-0.5"></i><div><p class="text-xs text-slate-400 uppercase tracking-wider">Platform</p><p class="font-medium text-white">Jubbio</p></div></li>
+                    <li class="flex items-start gap-3 border-b border-slate-700/50 pb-3"><i class="ph ph-calendar-blank text-xl text-slate-400 mt-0.5"></i><div><p class="text-xs text-slate-400 uppercase tracking-wider">Deneyim Başlangıcı</p><p class="font-medium text-white">2024</p></div></li>
+                    <li class="flex items-start gap-3 border-b border-slate-700/50 pb-3"><i class="ph ph-activity text-xl text-slate-400 mt-0.5"></i><div><p class="text-xs text-slate-400 uppercase tracking-wider">Aktiflik Durumu</p><p class="font-medium text-emerald-400">Yüksek</p></div></li>
+                    <li class="flex items-start gap-3"><i class="ph ph-timer text-xl text-slate-400 mt-0.5"></i><div><p class="text-xs text-slate-400 uppercase tracking-wider">Ortalama Müdahale Süresi</p><p class="font-medium text-sky-400">15-30 Saniye</p></div></li>
+                </ul>
+            </section>
+
+            <section class="glass-card rounded-2xl p-6 md:col-span-2 transition hover:border-indigo-500/30 flex flex-col justify-center reveal delay-400">
+                <div class="flex items-center gap-3 mb-4"><div class="p-2 bg-indigo-500/20 rounded-lg text-indigo-400"><i class="ph ph-book-open-text text-2xl"></i></div><h3 class="text-xl font-bold">02 | Profesyonel Özet</h3></div>
+                <p class="text-slate-300 leading-relaxed text-lg mb-6">2024 yılından itibaren dijital topluluk yönetimi, moderasyon ve sunucu operasyonları alanlarında aktif olarak görev alan; <span class="text-white font-semibold">disiplinli, çözüm odaklı ve sorumluluk bilincine sahip</span> bir topluluk yöneticisiyim.</p>
+                <div class="grid grid-cols-2 gap-4 mt-auto">
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 text-center shadow-inner"><span class="block text-5xl font-black text-sky-400 mb-2"><span class="counter" data-target="35">0</span>+</span><span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Farklı Toplulukta<br>Yönetim Tecrübesi</span></div>
+                    <div class="bg-slate-900/50 p-6 rounded-xl border border-slate-700/50 text-center shadow-inner"><span class="block text-5xl font-black text-indigo-400 mb-2"><span class="counter" data-target="20">0</span>+</span><span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Büyük Ölçekli Sunucuda<br>Görev Deneyimi</span></div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-6 md:col-span-2 transition hover:border-emerald-500/30 reveal delay-200">
+                <div class="flex items-center gap-3 mb-6"><div class="p-2 bg-emerald-500/20 rounded-lg text-emerald-400"><i class="ph ph-briefcase text-2xl"></i></div><h3 class="text-xl font-bold">03 | Deneyim ve Yönetim Geçmişi</h3></div>
+                <div class="space-y-4 text-slate-300">
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center"><div class="w-3 h-3 rounded-full bg-emerald-500 mt-1.5 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></div><div class="w-0.5 h-full bg-slate-700 mt-2"></div></div>
+                        <div class="pb-4"><h4 class="text-white font-semibold text-lg">Topluluk Yönetimi ve Moderasyon</h4><p class="text-sm text-emerald-400 mb-3">2024 - Günümüz</p>
+                            <ul class="list-disc list-inside space-y-2 text-slate-400">
+                                <li>Sunucu yönetim süreçlerinin takibi ve yetkili ekipleriyle koordinasyon.</li>
+                                <li>Kullanıcı şikâyetlerinin değerlendirilmesi ve anlaşmazlıkların çözümlenmesi.</li>
+                                <li>Kural ihlallerinin tespiti, yaptırımların uygulanması ve düzenin korunması.</li>
+                                <li>Yoğun kullanıcı trafiğinde moderasyon faaliyetlerinin kesintisiz yürütülmesi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-6 transition hover:border-pink-500/30 reveal delay-400">
+                <div class="flex items-center gap-3 mb-6"><div class="p-2 bg-pink-500/20 rounded-lg text-pink-400"><i class="ph ph-scales text-2xl"></i></div><h3 class="text-xl font-bold">Çalışma Prensipleri</h3></div>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-700/50 flex items-center gap-3 hover:bg-slate-800/50 transition duration-300"><i class="ph ph-gavel text-2xl text-pink-400"></i><div><p class="text-sm font-bold text-white">Disiplin</p><p class="text-xs text-slate-400">Kuralların tutarlı uygulanması.</p></div></div>
+                    <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-700/50 flex items-center gap-3 hover:bg-slate-800/50 transition duration-300"><i class="ph ph-handshake text-2xl text-pink-400"></i><div><p class="text-sm font-bold text-white">Tarafsızlık</p><p class="text-xs text-slate-400">İlişkilerden bağımsız karar.</p></div></div>
+                    <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-700/50 flex items-center gap-3 hover:bg-slate-800/50 transition duration-300"><i class="ph ph-shield-star text-2xl text-pink-400"></i><div><p class="text-sm font-bold text-white">Güvenilirlik</p><p class="text-xs text-slate-400">Sorumluluk ve yönetim gizliliği.</p></div></div>
+                    <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-700/50 flex items-center gap-3 hover:bg-slate-800/50 transition duration-300"><i class="ph ph-rocket-launch text-2xl text-pink-400"></i><div><p class="text-sm font-bold text-white">Hız</p><p class="text-xs text-slate-400">Bildirimlere anında müdahale.</p></div></div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-6 md:col-span-2 lg:col-span-3 transition hover:border-sky-500/30 reveal delay-200">
+                <div class="flex items-center gap-3 mb-6"><div class="p-2 bg-sky-500/20 rounded-lg text-sky-400"><i class="ph ph-star text-2xl"></i></div><h3 class="text-xl font-bold">04 | Uzmanlık Alanları</h3></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:bg-slate-700/50 hover:border-sky-500/50 transition duration-300"><i class="ph ph-tree-structure text-3xl text-sky-400 mb-3 block"></i><h4 class="font-bold text-white mb-2">Yönetim & Organizasyon</h4><p class="text-sm text-slate-400">Yetkili ekibi koordinasyonu, görev takibi ve operasyonel süreçlerin kontrolü.</p></div>
+                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:bg-slate-700/50 hover:border-sky-500/50 transition duration-300"><i class="ph ph-shield-warning text-3xl text-sky-400 mb-3 block"></i><h4 class="font-bold text-white mb-2">Moderasyon & Güvenlik</h4><p class="text-sm text-slate-400">İhlallere müdahale, spam denetimi ve ceza sistemlerinin adil uygulanması.</p></div>
+                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:bg-slate-700/50 hover:border-sky-500/50 transition duration-300"><i class="ph ph-lifebuoy text-3xl text-sky-400 mb-3 block"></i><h4 class="font-bold text-white mb-2">Kriz Yönetimi</h4><p class="text-sm text-slate-400">Acil durumlarda hızlı karar alma ve sorunların büyümeden kontrolü.</p></div>
+                    <div class="bg-slate-800 p-5 rounded-xl border border-slate-700 hover:bg-slate-700/50 hover:border-sky-500/50 transition duration-300"><i class="ph ph-trend-up text-3xl text-sky-400 mb-3 block"></i><h4 class="font-bold text-white mb-2">Topluluk Geliştirme</h4><p class="text-sm text-slate-400">Kullanıcı memnuniyetini artırma ve geri bildirim odaklı kalite iyileştirmesi.</p></div>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="glass-card rounded-2xl p-8 mb-16 text-center max-w-4xl mx-auto reveal delay-200">
+            <i class="ph ph-quotes text-4xl text-slate-600 mb-4 inline-block"></i><h3 class="text-2xl font-bold mb-4">Yönetim Anlayışım & Hedefim</h3>
+            <p class="text-lg text-slate-300 italic mb-6">"Bir yönetim ekibinin parçası olmak benim için yalnızca yetki sahibi olmak anlamına gelmez. Bu görev; sorumluluk almak, güven kazanmak, gerektiğinde inisiyatif kullanmak ve alınan kararların arkasında durabilmek demektir."</p>
+            <p class="text-slate-400 leading-relaxed">Farklı topluluklarda edindiğim deneyimleri Jubbio bünyesindeki sunucularda güvenilir, aktif ve profesyonel bir yönetim anlayışı ortaya koymak; yönetim ekibinin iş yükünü azaltarak daha güvenli bir ortam oluşturmak için kullanmayı hedefliyorum.</p>
+        </section>
+
+        <footer class="text-center pb-12 border-t border-slate-800 pt-12 mt-12 reveal delay-400">
+            <h2 class="text-3xl font-bold mb-4">Birlikte Çalışmaya Hazırım</h2>
+            <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Jubbio platformunda faaliyet gösteren sunucuların yönetim kadrolarında görev almaya ve deneyimimi topluluğun gelişimi için kullanmaya hazırım.</p>
+            
+            <a href="mailto:wolfkillers1234.ma@gmail.com" class="cta-button inline-flex items-center gap-3 bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white font-bold text-xl px-10 py-5 rounded-full shadow-lg border border-indigo-400/30"><i class="ph ph-envelope-simple-open text-2xl"></i> İletişime Geç</a>
+            
+            <div class="mt-12 text-sm text-slate-500 flex justify-center gap-6 font-semibold uppercase tracking-widest">
+                <span>Profesyonellik</span><span>•</span><span>Disiplin</span><span>•</span><span>Güven</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { root: null, rootMargin: "0px", threshold: 0.35 };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        const counters = entry.target.querySelectorAll(".counter");
+                        counters.forEach(counter => {
+                            if (!counter.classList.contains("counted")) {
+                                counter.classList.add("counted");
+                                startCounting(counter);
+                            }
+                        });
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const reveals = document.querySelectorAll(".reveal");
+            reveals.forEach(el => observer.observe(el));
+
+            function startCounting(element) {
+                const target = parseInt(element.getAttribute("data-target"));
+                const duration = 3000; 
+                const frameDuration = 1000 / 60; 
+                const totalFrames = Math.round(duration / frameDuration);
+                let frame = 0;
+                
+                element.innerText = "0"; 
+                
+                const countInterval = setInterval(() => {
+                    frame++;
+                    const progress = frame / totalFrames;
+                    const currentCount = Math.round(target * progress);
+                    element.innerText = currentCount;
+                    if (frame >= totalFrames) {
+                        element.innerText = target;
+                        clearInterval(countInterval);
+                    }
+                }, frameDuration);
+            }
+        });
+    </script>
+</body>
+</html>
